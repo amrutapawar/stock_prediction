@@ -75,7 +75,8 @@ def initialize():
  
 """get historical data for training from the excel sheet"""
 def getdata():
-    dateinput,openprice,closingprice= np.genfromtxt('F:\CUNY\Fourth Semester\Program 4\yahoostockdata.csv',delimiter=',',usecols=(0,16,2),unpack=True,dtype=float)
+    """dateinput,openprice,closingprice= np.genfromtxt('F:\CUNY\Fourth Semester\Program 4\yahoostockdata.csv',delimiter=',',usecols=(0,16,2),unpack=True,dtype=float)"""
+    dateinput,openprice,closingprice= np.genfromtxt('F:\yahoostockdata.csv',delimiter=',',usecols=(0,16,2),unpack=True,dtype=float)
     
     print dateinput,openprice,closingprice
     
